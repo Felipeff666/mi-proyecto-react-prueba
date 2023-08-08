@@ -1,0 +1,12 @@
+input{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 20px;
+    box-shadow: 0px 3px 25px 14px rgba(0,0,0,0.08);
+-webkit-box-shadow: 0px 3px 25px 14px rgba(0,0,0,0.08);
+-moz-box-shadow: 0px 3px 25px 14px rgba(0,0,0,0.08);
+}
+input:hover{
+    border: solid 2px#33bbd1;
+}

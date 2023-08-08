@@ -1,0 +1,22 @@
+.contenedor-boton{
+    margin-top: -2%;
+    width: 60%;
+    text-align: end;
+}
+.agregar-boton{
+    transform: rotate(0);
+    transition: transform 0.3s ease-in-out;
+    width: 70px;
+    color: white;
+    font-size: 50px;
+    background-color: #33bbd1;
+
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 3px 25px 14px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 0px 3px 25px 14px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 3px 25px 14px rgba(0,0,0,0.08);
+}
+.agregar-boton:hover{
+    transform: rotate(90deg);
+}
