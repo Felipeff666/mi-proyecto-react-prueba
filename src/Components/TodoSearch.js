@@ -2,13 +2,10 @@ import React from 'react';
 
 import './../styles/TodoSearch.css'
 
-function TodoSearch(){
+function TodoSearch({searchValue,setSearchValue}){
     
-    //estados
-    const [searchValue, setSearchValue] = React.useState('');
-
-    console.log('los usuarios buscan to dos de:'+searchValue);
-
+    
+    //console.log('los usuarios buscan to dos de:'+searchValue);
     return(
             <input 
             autoFocus 
@@ -16,7 +13,6 @@ function TodoSearch(){
             value={searchValue}
             onChange={(event)=>{
                 setSearchValue(event.target.value ) 
-                console.log(searchValue);
             }}
             ></input>
     )
