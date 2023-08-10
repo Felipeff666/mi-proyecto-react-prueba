@@ -1,4 +1,4 @@
-import { click } from '@testing-library/user-event/dist/click';
+
 import {CompleteIcon} from './CompleteIcon';
 import {DeleteIcon} from './DeleteIcon';
 import './../styles/TodoItem.css'
