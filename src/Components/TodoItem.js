@@ -1,25 +1,24 @@
 import { click } from '@testing-library/user-event/dist/click';
+import {CompleteIcon} from './CompleteIcon';
+import {DeleteIcon} from './DeleteIcon';
 import './../styles/TodoItem.css'
 function TodoItem(props){
     return(
 
         <div className="item">
-            <button 
-            className={`boton-completar ${props.completed && "boton-completar-completado" }`}
-            onClick={props.onComplete }
-            >v
-            </button> 
+            <CompleteIcon
+                active={props.completed}
+                onClick={props.onComplete}
+                /* color="blue" */
+            />
             <span 
             className={`texto ${props.completed && "texto-completado"}`}
             >{props.text}
             </span>  
-
-
-            <button 
-            className="boton-eliminar"
-            onClick={props.onDelete}
-            >x
-            </button>
+            <DeleteIcon
+                onClick={props.onDelete}
+                /* color="Red" */
+            />
         </div>
             
             
